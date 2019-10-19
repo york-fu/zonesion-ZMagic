@@ -1,0 +1,2 @@
+
+将文件放到”contiki-3.0\zonesion\ZMagic“目录下。
