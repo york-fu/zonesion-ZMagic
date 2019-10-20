@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>readme</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+			font-family: 'Microsoft yahei';
+        }
+        .readme-wrapper{
+            padding-bottom: 55px;
+        }
+        .readme-header{
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 22px;
+            color: #fff;
+            background: #18a8ff;
+        }
+        .readme-footer{
+            height: 40px;
+            line-height: 40px;
+            color: #fff;
+            width: 100%;
+            background: #18a8ff;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        .readme-container {
+            width: 100%
+            margin: 0 auto;
+            display: -webkit-flex;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .readme-item{
+            height: 300px;
+            flex: 50% 0;
+            padding: 15px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+
+
+        }
+        .item-box{
+            height: 100%;
+            border: 1px solid #ddd;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .item-hd{
+            height: 40px;
+            line-height: 40px;
+            background-color: #ddd;
+            border-bottom: 1px solid #ddd;
+            text-indent: 10px;
+            font-size: 18px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .item-bd{
+            height: 230px;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+			text-align:center;
+            justify-content: center;
+			line-height: 265px;
+        }
+        .item-block{
+            height: 208px;
+            display: block;
+            padding: 10px;
+            overflow-y: scroll;
+        }
+        .item-block p{
+            line-height: 25px;
+        }
+        .item-bd img{
+			margin: auto
+        }
+    </style>
+</head>
+<body>
+    <div class="readme-wrapper">
+        <div class="readme-header">节点名称：Plus(工业控制套件)</div>
+        <div class="readme-container">
+            <div class="readme-item">
+                <div class="item-box">
+                    <div class="item-hd">端子B：直流电机（继电器K1）</div>
+                    <div class="item-bd">
+                        <img src="直流电机.png" style="width: 480px; height: 270px;">
+                    </div>
+                </div>
+            </div>
+			<div class="readme-item">
+                <div class="item-box">
+                    <div class="item-hd">端子C：电磁阀（继电器K2）</div>
+                    <div class="item-bd">
+                        <img src="电磁阀.png" style="width: 480px; height: 270px;">
+                    </div>
+                </div>
+            </div>
+			<div class="readme-item">
+                <div class="item-box">
+                    <div class="item-hd">端子D：接近开关传感器（IO）</div>
+                    <div class="item-bd">
+                        <img src="接近开关.png" style="width: 480px; height: 270px;">
+                    </div>
+                </div>
+            </div>
+            <div class="readme-item">
+                <div class="item-box">
+                    <div class="item-hd">说明</div>
+                    <div class="item-bd item-block">
+                        <p>接近开关：A0-检测金属状态，布尔型，0表示未检测到金属/1表示检测到金属；</p>
+						<p>直流电机：D1(OD1/CD1)-直流电机开关状态，D1的Bit0表示直流电机开关状态(OD1=1打开/CD1=1关闭)；</p>
+						<p>电磁阀：D1(OD1/CD1)-电磁阀开关状态，D1的Bit1表示电磁阀开关状态(OD1=2打开/CD1=2关闭)；</p>
+					</div>
+                </div>
+            </div>
+        </div>
+        <div class="readme-footer">v1.0.181024</div>
+    </div>
+</body>
+</html>
